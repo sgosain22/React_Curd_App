@@ -9,10 +9,10 @@ const Student = () => {
     cityName: ""
   });
 
-  const [fullName, setFullName] = useState("");
-  const [stuName, setStuName] = useState("");
-  const [emailId, setEmailId] = useState("");
-  const [cityName, setCityName] = useState("");
+  // const [fullName, setFullName] = useState("");
+  // const [stuName, setStuName] = useState("");
+  // const [emailId, setEmailId] = useState("");
+  // const [cityName, setCityName] = useState("");
 
   const [items, setItems] = useState([]);
 
