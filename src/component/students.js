@@ -34,7 +34,7 @@ const Student = () => {
         
       setItems(
         items.map((elem) => {
-          if (elem.id == isEditItem) {
+          if (elem.id === isEditItem) {
             return { ...elem, name: formData };
           }
           return elem;
@@ -82,7 +82,7 @@ const Student = () => {
 
   const deleteItem = (index) => {
     const updatedItems = items.filter((elem) => {
-      return index != elem.id;
+      return index !== elem.id;
     });
     setItems(updatedItems);
   };
@@ -91,7 +91,7 @@ const Student = () => {
 
   const editItem = (id) => {
     let newEditItem = items.find((elem) => {
-      return elem.id == id;
+      return elem.id === id;
     });
     console.log(newEditItem);
 
